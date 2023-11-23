@@ -16,13 +16,13 @@
   @error("URL")
   <div>{{$message}}</div>
   @enderror
-  <label for="Email">Email</label><br>
-  <input type="text" id="Email" name="Email" ><br>
+  <label for="login">Login</label><br>
+  <input type="text" id="login" name="login" ><br>
   @error("Email")
   <div>{{$message}}</div>
   @enderror
   <label for="MDP">MDP</label><br>
-  <input type="text" id="MDP" name="MDP" ><br><br>
+  <input type="password" id="MDP" name="MDP" ><br><br>
   @error("MDP")
   <div>{{$message}}</div>
   @enderror
