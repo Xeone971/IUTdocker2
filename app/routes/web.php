@@ -60,3 +60,13 @@ Route::post('/team/store', [TeamController::class, 'store'])->name('storeTeam');
 Route::get('/create_team', function () {
     return view('create_team');
 })->name('create_team');
+
+// Route::get('/hubteam', function () {
+//     return view('hubteam');
+// })->name('hubteam');
+
+Route::get('/hubteam', [TeamController::class, 'showTeams'])->name('hubteam');
+
+Route::get('/ajoutTeam/{id}', [TeamController::class, 'show'])->name('ajoutTeam');
+
+Route::post('/process-form', [TeamController::class, 'processForm'])->name('processForm');
