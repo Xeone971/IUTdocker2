@@ -69,4 +69,4 @@ Route::get('/hubteam', [TeamController::class, 'showTeams'])->name('hubteam');
 
 Route::get('/ajoutTeam/{id}', [TeamController::class, 'show'])->name('ajoutTeam');
 
-Route::post('/process-form', [TeamController::class, 'processForm'])->name('processForm');
+Route::post('/processForm', [TeamController::class, 'processForm'])->name('processForm');

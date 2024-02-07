@@ -17,5 +17,6 @@ return [
     'Nom' => 'Nom : :name',
     'Ajoutpar' => 'Ajouté par : :addedBy',
     'Date' => 'Date/heure de l\'ajout : :datetime',
-
+    'user_added_subject' => 'Nouvel utilisateur ajouté à l\'équipe',
+    'user_added_content' => ':addedUserName a été ajouté à l\'équipe: :team par :addedByUserName à :addedAt.',
 ];
