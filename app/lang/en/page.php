@@ -34,7 +34,7 @@ return [
     'hcteam' => 'Creating a team',
     'cteam' => 'Create the team',
     'namet' => 'Team Name',
-    'login' => 'You are logged in!',
+    'login2' => 'You are logged in!',
     'dash' => 'Dashboard',
     'editmdp' => 'Edit Password',
     'newmdp' => 'New Password:',
@@ -42,6 +42,7 @@ return [
     'confirmmdp' => 'Confirm New Password:',
     'acc' => 'Welcome',
     'accdesc' => 'Please log in to access the contents of the site',
+    'haddt' => 'adding member in the team :',
 
 ];
 

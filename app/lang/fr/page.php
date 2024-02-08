@@ -35,7 +35,7 @@ return [
     'hcteam' => 'Création d\'une équipe',
     'cteam' => 'Créer l\'équipe',
     'namet' => 'Nom de l\'équipe',
-    'login' => 'Tu es connecté !',
+    'login2' => 'Tu es connecté !',
     'dash' => 'Tableau de bord',
     'editmdp' => 'Modifier le mot de passe',
     'newmdp' => 'Nouveau mot de passe :',
@@ -43,6 +43,7 @@ return [
     'confirmmdp' => 'Confirmer le nouveau mot de passe :',
     'acc' => 'Bienvenue',
     'accdesc' => 'Veuillez vous conneter pour acceder aux contenues du site',
+    'haddt' => 'Ajout de membre a la team :',
 
 
     
