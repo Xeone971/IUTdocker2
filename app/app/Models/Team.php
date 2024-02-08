@@ -18,5 +18,10 @@ class Team extends Model
     {
         return $this->belongsToMany(User::class);
     }
+
+    public function passwords(): BelongsToMany
+    {
+        return $this->belongsToMany(Password::class);
+    }
 }
 

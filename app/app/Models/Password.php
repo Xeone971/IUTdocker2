@@ -14,4 +14,8 @@ class Password extends Model
     public function users(){
         return $this->belongsTo(User::class);
     }
+
+    public function passwords(){
+        return $this->belongsTo(Password::class);
+    }
 }

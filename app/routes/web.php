@@ -5,6 +5,7 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\HubmdpController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomController;
 
 
 
@@ -19,28 +20,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('/');
+Route::get('/',[CustomController::class, 'home'])->name('/');
 
-Route::get('/gestionMdp', function () {
-    return view('gestionMdp');
-});
+Route::get('/gestionMdp',[CustomController::class, 'gestionMdp'])->name('gestionMdp');
 
 Route::post('/checKForm', [
     ControllerForm::class, 'checKForm'
 ])->name('checKForm');
 
-Route::get('/hubmdp', function () {
-    return view('hubmdp');
-})->name('hubmdp');
+Route::get('/hubmdp',[CustomController::class, 'hubmdp'])->name('hubmdp');
 
 Route::get('/hubmdp', [HubmdpController::class, 'showHubmdp'])->name('hubmdp');
 
+Route::get('/dashboard', [
+    CustomController::class, 'dashboard'
+])->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -57,9 +52,7 @@ Route::put('/password/update/{id}', [HubmdpController::class, 'updatePassword'])
 
 Route::post('/team/store', [TeamController::class, 'store'])->name('storeTeam');
 
-Route::get('/create_team', function () {
-    return view('create_team');
-})->name('create_team');
+Route::get('/create_team',[CustomController::class, 'create_team'])->name('create_team');
 
 // Route::get('/hubteam', function () {
 //     return view('hubteam');

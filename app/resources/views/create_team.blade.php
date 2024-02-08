@@ -7,15 +7,15 @@
     <title>Création d'équipe</title>
 </head>
 <body>
-    <h1>Création d'équipe</h1>
+    <h1>{{__('page.hcteam')}}</h1>
 
     <form action="{{ route('storeTeam') }}" method="POST">
         @csrf
         
-        <label for="name">Nom de l'équipe :</label>
+        <label for="name">{{__('page.namet')}} :</label>
         <input type="text" id="name" name="name" required>
 
-        <button type="submit">Créer l'équipe</button>
+        <button type="submit">{{__('page.cteam')}}</button>
     </form>
     
 

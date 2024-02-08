@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Liste des équipes</h1>
+    <h1>{{__('page.hhubteam') }}</h1>
     @foreach($teams as $team)
-        <p>Team: {{ $team->name }}</p>
-        <a href="/ajoutTeam/{{$team->id}}">Ajouter un membre</a>
+        <p>{{__('page.team')}}: {{ $team->name }}</p>
+        <a href="/ajoutTeam/{{$team->id}}">{{__( 'page.addm' )}}</a><br/>
         
         
     @endforeach
