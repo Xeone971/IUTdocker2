@@ -40,6 +40,8 @@ return [
     'newmdp' => 'New Password:',
     'mdpactuel' => 'Current Password:',
     'confirmmdp' => 'Confirm New Password:',
+    'acc' => 'Welcome',
+    'accdesc' => 'Please log in to access the contents of the site',
 
 ];
 

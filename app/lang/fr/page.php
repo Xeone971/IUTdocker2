@@ -41,6 +41,8 @@ return [
     'newmdp' => 'Nouveau mot de passe :',
     'mdpactuel' => 'Mot de passe actuel :',
     'confirmmdp' => 'Confirmer le nouveau mot de passe :',
+    'acc' => 'Bienvenue',
+    'accdesc' => 'Veuillez vous conneter pour acceder aux contenues du site',
 
 
     
