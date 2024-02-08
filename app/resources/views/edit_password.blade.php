@@ -24,5 +24,6 @@
 
         <button type="submit">{{__('page.editmdp') }}</button>
     </form>
+    <a href="/"><button>{{__('page./') }}</button></a>
 </body>
 </html>

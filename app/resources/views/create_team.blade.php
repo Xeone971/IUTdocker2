@@ -17,6 +17,7 @@
 
         <button type="submit">{{__('page.cteam')}}</button>
     </form>
+    <a href="/"><button>{{__('page./') }}</button></a>
     
 
 </body>

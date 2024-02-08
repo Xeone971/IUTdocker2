@@ -28,10 +28,12 @@
   @enderror
   <input type="submit" value="{{ __('page.submit') }}">
 </form> 
+<a href="/"><button>{{__('page./') }}</button></a>
 @if ($errors->any())
                                 <div class="alert alert-danger text-xl font-semibold text-gray-900 dark:text-white">
                                     <p>{{dd($errors->all())}}</p>
                                 </div>
                             @endif
+                            
 </body>
 </html>

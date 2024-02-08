@@ -9,5 +9,6 @@
         @endforeach
     </select>
 
-    <button type="submit">Soumettre</button>
+    <button type="submit">{{ __('page.submit') }}</button>
 </form>
+<a href="/"><button>{{__('page./') }}</button></a>

@@ -14,6 +14,6 @@
         
         
     @endforeach
-    
+    <a href="/"><button>{{__('page./') }}</button></a>
 </body>
 </html>
