@@ -2,6 +2,9 @@
 
 @task('deploy', ['on' => 'web'])
 cd lucca-collas.dhonnabhain.me/app
+    # ramener la nouvelle version_compare
+    git pull
+    
     # Mettre à jour les dépendances Composer
     composer install --no-interaction --prefer-dist --optimize-autoloader
 
